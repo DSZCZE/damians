@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<head>
+<title> index </title>
+</head>
+<body>
+	<div style="background-color:grey;">
+		<h1><center> PSI - DAMIAN SZCZESNIAK </center></h1>
+		</div>
+	<div style="float:left:width:30%:height:550px"
+		<h3> html </h3>
+			<a href=index1.html> STRONA GLOWNA </a> <br/>
+			<a href=formularz.html> FORMULARZ </a> <br/>
+			<a href=nauczyciele.html> NAUCZYCIELE </a><br/>
+			<a href=zdjecia.html> ZDJECIA </a><br/>
+			<a href=tabela.html> TABELA </a><br/>
+			<a href=Szczesniak_lista.html> LISTA </a><br/>
+		</div>
+	<div style="float:right;width:70%;">
+<title>Formularz</title>
+</head>
+<body bgcolor="white">
+    <form>
+		<p> IMIE I NAZWISKO: <input type="text" name="nazwisko i imie" size="30" /></p>
+		<p> ADRES EMAIL: <input type="text" name="email" value="email@poczta.pl" /> </p> 
+		<p> HASŁO: <input type="password" id="haslo" maxlenght="10" /> </p>
+		<fieldset>
+		<p> Płeć </p>
+		<p> <input type="radio" name="plec" value="meszczyzna" /> MĘŻCZYZNA <br/>
+		<p> <input type="radio" name="plec" value="Kobieta" checked /> KOBIETA<br/>
+		
+		<p> <input type="radio" name="gender" id="male"  value="mezczyzna" /> 
+		<label for="male"> mężczyzna </label><br/>
+		<input type="radio" name="gender"  id="female" value="kobieta" /> 
+		<label for="female"> kobieta </label> </p>
+		</fieldset>
+		<fieldset>
+		<p> JEZYKI KTÓRYMI WŁADASZ </p>
+		<p> <input type="checkbox" name="nazwa_jezyka" value="wartosc_angielski" checked /> ANGIELSKI </p>
+		<p> <input type="checkbox" name="nazwa_jezyka" value="wartosc_niemiecki"  /> NIEMEICKI</p>
+		<p> <input type="checkbox" name="nazwa_jezyka" value="wartosc_chinski"  /> CHINSKI </p>
+		</fieldset>
+		<fieldset>
+		<select name="nazwa_owoce" size="4" multiple> 
+			<optgroup  label="ULUBIONE_OWOCE">
+				<option value="truskawki" /> TRUSKAWKI
+				<option value="banany" /> BANANY
+				<option value="maliny" /> MALINY
+			</optgroup>
+		</select>
+		</p>
+		<p>
+		<select id="days"[]" size="7" multiple>
+			<optgroup  label="DNI_WOLNE">
+				<option value="sobota" /> SOBOTA
+				<option value="niedziela" /> NIEDZIELA
+				<option value="truskawki" /> TRUSKAWKI
+			</optgroup>
+			<optgroup label="DNI_ROBOCZE">
+				<option value="poniedzialek" /> PONIEDZIALEK
+				<option value="wtorek" /> WTOREK
+				<option value="sroda" /> SRODA
+				<option value="czwartek" /> CZWARTEK
+				<option value="piatek" /> PIATEK
+			</optgroup>
+			</select>
+			</p>
+			<input list="blok" name="przegladarki" />
+				<datalist id="blok" />
+				<option value="Internet Explorer">     
+				<option value="Firefox">    
+				<option value="Chrome"> 
+				<option value="Opera">    
+				<option value="Safari">  
+			</datalist> <input type="sumbit" name="prześlij"
+		</p>
+		<p>
+		<textarea cols="50" rows="6 ">Jan Niezbędny
+		ul. Nieznana 3
+		40-001 Katowice
+		Polska
+		</textarea> </p>
+		<p>
+		<textarea cols="50" rows="6 ">Wprowadz swój adres
+		</textarea></p>
+		<p>
+			<input type="reset" id="q">
+		</p>
+		<p>
+			<input type="button" name="leavel" value="Opusc stronę!">
+		</p>
+		<p>
+			<button type="button" id="artem" name="przycisk_artem" onclick="alert('bomba - wygenerowano zdarzenie')"> Kupuj teraz! </button>
+		</p>
+		<p>
+			<input type="file" name="leavel" value="Przeglšdaj!">
+		</p>
+		<p>
+		<br/>
+			<label for="FirstName">Imię: </label>
+			<input type="text" id="FirstName" name="FirstName" accesskey="I">
+		</p>
+		<br>
+		<p>
+			<input type="image" name="kot src="kot.jfif">
+		</p>
+			<fieldset>
+				<legend>Usprawnienia w formularzach (HTML 5)</legend>
+		<p>
+			<input type="text" id="Imie" autofocus>
+		</p>
+		<p>
+			<input type="text" id="Imie" autocomplete="">
+		</p>
+		<p>
+			<input type="text" id="Imie" required="">
+		</p>
+		<p>
+			<input type="email" id="E-mail" value="adres@poczta.pl" required="">
+		</p>
+		<p>
+			<input type="url" id="URL" value="http://" required="">
+		</p>
+		<p>
+			<input type="number" min="1" max="50" step="2" value="1" id="liczba" required="">
+		</p>
+		<p>
+			<input type="date" id="Data" required="">
+		</p>
+		<p>
+			<input type="color" id="Data" required="">
+		</p>
+		<p>
+			<input type="range" id="a" name="a" value="50">
+		</p>
+		<p>
+			<input type="number" id="b" name="b" value="50">
+		</p>
+		
+	<p>
+  <form action="onclick" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+</form>
+</fieldset>
+</p>
+		<div style="background-color:grey;clear:both;"> <center> &copy; D.S , OCTOBER 2023 </center>
+		</div>
+</body>
+</html>
